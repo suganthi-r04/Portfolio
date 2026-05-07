@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Suga Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<canvas id="background-canvas"></canvas>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav class="nav-bar">
+  <div class="logo">Suganthi</div>
+  <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact-section">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <canvas id="hero-canvas"></canvas>
+
+  <div class="hero-inner">
+   
+   
+   
+    <div class="profile-wrap">
+  <img src="icon/image.jpg" alt="Suganthi's Photo" class="profile-pic" />
+  <div class="pink-ring ring1"></div>
+  <div class="pink-ring ring2"></div>
+  <div class="pink-ring ring3"></div>
+</div>
+
+
+
+
+    <div class="hero-text">
+      <h1 class="fade-in">Hi, I'm <span class="typed-text">Suganthi R</span> <span class="wave">👋</span></h1>
+      <p class="subtitle">I build beautiful, performant web apps — I combine design with code to deliver clean solutions.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#projects">See Projects</a>
+        <a class="btn btn-outline" href="#contact">Get In Touch</a>
+
+        <a class="btn btn-outline" href="Suganthi.pdf" target="_blank">Download Resume</a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="glass-section about-section">
+  <div class="section-inner">
+    <h2>About Me</h2>
+    <p>Hello! I'm Suganthi, a Final Year CSE student passionate about Web Development and Software Engineering, 
+seeking an entry-level IT position to apply my skills, learn from industry experts, and contribute 
+to innovative tech projects With a solid foundation in programming and a keen interest in 
+building scalable software solutions and crafting engaging web experiences. And also a passionate developer who loves creating beautiful and functional web apps. I enjoy learning new technologies and turning ideas into real projects. I focus on clean UI, fast performance, and delightful micro-interactions.</p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="glass-section skills-section">
+  <div class="section-inner">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <img src="icon/html.png" alt="HTML">
+        <span>HTML</span>
+      </div>
+      <div class="skill">
+        <img src="icon/css.jpg" alt="CSS">
+        <span>CSS</span>
+      </div>
+      <div class="skill">
+        <img src="icon/js.png" alt="JavaScript">
+        <span>JavaScript</span>
+      </div>
+      <div class="skill">
+        <img src="icon/reactjs.jpg" alt="ReactJS">
+        <span>ReactJS</span>
+      </div>
+      <div class="skill">
+        <img src="icon/python.webp" alt="Python">
+        <span>Python</span>
+      </div>
+      <div class="skill">
+        <img src="icon/c.png" alt="C">
+        <span>C</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="glass-section projects-section">
+  <div class="section-inner">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-wrapper">
+        <a href="https://voluble-speculoos-ccf3e2.netlify.app" target="_blank" class="project-card" aria-label="Open Tasteplay in new tab">
+          <img src="icon/taste.jpg" alt="Tasteplay Project">
+        </a>
+        <h3 class="project-title">Tasteplay</h3>
+        <p class="project-desc">A smart recipe website for food lovers. Created an engaging platform featuring diverse recipes and gamified elements leading users 
+directly to relevant recipes. Integrated fun games on the website where outcomes link straight to 
+specific recipes for an interactive culinary experience.</p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-wrapper">
+        <a href="https://celadon-arithmetic-325574.netlify.app" target="_blank" class="project-card" aria-label="Open Conference Management in new tab">
+          <img src="icon/conference.webp" alt="Conference Management Project">
+        </a>
+        <h3 class="project-title">Conference Management</h3>
+        <p class="project-desc">An efficient web app for event coordination. Developed a Conference Management System website using HTML, CSS, and JavaScript for 
+managing conference registrations, paper submissions, and speaker schedules. Created features 
+for conference attendees to register, submit abstracts, and view conference schedules on the 
+portal.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT PREVIEW (has Contact Me button + social icons under it) -->
+<section class="glass-section contact-preview" id="contact-preview">
+  <div class="section-inner">
+    <h2>Contact Me</h2>
+    <p>If you’d like to collaborate or say hello, click below!</p>
+    <button id="show-contact-form" class="btn-primary">Contact Me</button>
+
+    <!-- Social icons row (centered, just after Contact Me button) -->
+    <div class="social-row" aria-label="social-links">
+      <a href="https://www.linkedin.com/in/suganthi-r-4076b5332" target="_blank" rel="noopener" title="LinkedIn">
+        <img src="icon/linkedin.png" alt="LinkedIn" class="social-icon" />
+      </a>
+      <a href="mailto:r.suganthi143@gmail.com" title="Email">
+        <img src="icon/gmail.webp" alt="Email" class="social-icon" />
+      </a>
+      <a href="YOUR_GITHUB_URL" target="_blank" rel="noopener" title="GitHub">
+        <img src="icon/github.png" alt="GitHub" class="social-icon" />
+      </a>
+      <a href="tel:+919442104526" title="Call">
+        <img src="icon/phone.jpg" alt="Phone" class="social-icon" />
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Hidden Contact Form Section -->
+<section class="glass-section contact-section" id="contact-section" style="display: none;">
+  <div class="section-inner narrow">
+    <h2>Send a Message</h2>
+    <form id="contact-form">
+      <input type="text" name="from_name" placeholder="Your Name" required />
+      <input type="email" name="reply_to" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-primary">Send</button>
+    </form>
+    <div id="popup" class="popup">Email Sent Successfully!</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Suga | Made with ❤️</p>
+</footer>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="script.js"></script>
+
+<script>
+
+window.addEventListener("scroll", () => {
+  const nav = document.querySelector(".nav-bar");
+  const heroHeight = document.querySelector(".hero").offsetHeight;
+  
+  if (window.scrollY > heroHeight - 100) {
+    nav.classList.add("hide");
+  } else {
+    nav.classList.remove("hide");
+  }
+});
+
+</script>
+
+<script>
+  // Simulate hover on touch devices
+  function enableTouchHover(selector) {
+    document.querySelectorAll(selector).forEach(el => {
+      el.addEventListener('touchstart', () => el.classList.add('hover'));
+      el.addEventListener('touchend', () => el.classList.remove('hover'));
+    });
+  }
+
+  // Profile image rings
+  enableTouchHover('.profile-wrap');
+
+  // Skill icons
+  enableTouchHover('.skill img');
+
+  // Project cards
+  enableTouchHover('.project-card');
+
+  // Buttons
+  enableTouchHover('.hero-cta .btn, .btn-outline, .btn-primary, .nav-links a');
+</script>
+
+<script>
+// Select all buttons, skill icons, and project cards
+const hoverElements = document.querySelectorAll(
+  '.nav-links a, .skill img, .project-card, .hero-cta .btn'
+);
+
+// Create an IntersectionObserver to detect when elements enter the viewport
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('hover-sim'); // add hover-sim class
+    } else {
+      entry.target.classList.remove('hover-sim'); // remove when out of view
+    }
+  });
+}, { threshold: 0.5 }); // trigger when 50% visible
+
+hoverElements.forEach(el => observer.observe(el));
+</script>
+
+
+</body>
+</html>
